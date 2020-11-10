@@ -1,3 +1,4 @@
+/* font-family: roboto-regular */
 @font-face {
   font-family: 'roboto-regular';
   src: url('/fonts/roboto-regular/roboto-regular.eot');
@@ -9,6 +10,19 @@
   font-style: normal;
 }
 
+/* font-family: roboto-medium */
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('/fonts/roboto-medium/roboto-medium.eot');
+  src: url('/fonts/roboto-medium/roboto-medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/roboto-medium/roboto-medium.woff2') format('woff2'),
+       url('/fonts/roboto-medium/roboto-medium.woff') format('woff'),
+       url('/fonts/roboto-medium/roboto-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* font-family: ptserif-bold */
 @font-face {
   font-family: 'ptserif-bold';
   src: url('/fonts/ptserif-bold/ptserif-bold.eot');
@@ -19,3 +33,4 @@
   font-weight: 700;
   font-style: normal;
 }
+
