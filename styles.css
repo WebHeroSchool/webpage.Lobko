@@ -1,3 +1,7 @@
+html {
+  font-family: 'roboto-regular';
+}
+
 body {
   margin: 0;
 }
@@ -42,8 +46,7 @@ body {
 }
 
 .main__title, .logo {
-  font-family: 'PT Serif', serif;
-  font-weight: 700; 
+  font-family: 'ptserif-bold' ;
 }
 
 .main__title {
@@ -52,10 +55,5 @@ body {
 
 .main__subtitle {
   font-size: 22px;
-  font-weight: 400;
-}
-
-html {
-  font-family: 'Roboto', sans-serif;
 }
 
