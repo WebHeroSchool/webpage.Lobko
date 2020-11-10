@@ -33,6 +33,7 @@ body {
 
 .menu__item {
   padding: 0 13px;
+  line-height: 21px;
 }
 
 .menu__item, .main__button {
@@ -51,6 +52,7 @@ body {
 
 .main__title {
   font-size: 66px;
+  line-height: 85px;
 }
 
 .main__subtitle {
