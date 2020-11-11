@@ -12,6 +12,7 @@ body {
 }
 
 .header {
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -23,7 +24,31 @@ body {
 .logo {
   margin-right: 63%;
   padding: 40px 0;
+  padding-left: 44px;
   font-size: 24px;
+  position: relative;
+}
+
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
+  opacity: 70%;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+  opacity: 70%;
 }
 
 .menu {
@@ -34,13 +59,14 @@ body {
 .menu__item {
   padding: 0 13px;
   line-height: 21px;
+  text-decoration: none;
+  color: black;
 }
 
 .menu__item, .main__button {
   font-size: 18px;
-  font-weight: 500;
+  font-family: 'roboto-medium';
 }
-
 
 .menu__item:last-child {
   padding-right: 0;
@@ -56,7 +82,6 @@ body {
 }
 
 .main__subtitle {
-  font-family: 'roboto-medium';
   font-size: 22px;
 }
 
