@@ -1,3 +1,7 @@
+.main__title {
+  font-family: 'PT Serif', serif;
+}
+
 body {
   margin: 0;
 }
@@ -58,4 +62,3 @@ body {
 html {
   font-family: 'Roboto', sans-serif;
 }
-
