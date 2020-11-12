@@ -12,17 +12,16 @@ body {
 }
 
 .header {
-  padding: 40px 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 206px;
 }
 
 .logo {
   position: relative;
   margin-right: 63%;
   padding: 40px 0 40px 44px;
-  font-size: 24px;
-  line-height: 31px;
+  font: 700 24px/31px 'ptserif-bold';
 }
 
 .logo__circle {
@@ -53,9 +52,7 @@ body {
 }
 
 .menu__item, .main__button {
-  font-size: 18px;
-  line-height: 21px;
-  font-family: 'roboto-medium';
+  font: 500 18px/21px 'roboto-medium';
 }
 
 .menu__item {
@@ -69,7 +66,7 @@ body {
   margin-right: 0;
 }
 
-.menu__item:hover:after {
+.menu__item_active:after {
   position: absolute;
   display: block;
   content: '';
@@ -79,16 +76,23 @@ body {
   background: #0056EC;
 }
 
-.main__title, .logo {
-  font-family: 'ptserif-bold' ;
+.main {
+  padding: 0 63% 317px 0;
+  background: top right no-repeat url(images/main-picture.svg);
 }
 
 .main__title {
-  font-size: 66px;
-  line-height: 85px;
+  font: 600 66px/85px 'ptserif-bold';
+  margin: 0 0 40px 0;
+}
+
+.main__title_highlight {
+  background: #ECF3FF;
 }
 
 .main__subtitle {
-  font-size: 22px;
+  font: 400 22px/26px 'roboto-regular';
+  margin: 0 0 41px 0;
+  width: 455px;
 }
 
