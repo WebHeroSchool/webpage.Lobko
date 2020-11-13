@@ -108,4 +108,17 @@ body {
   padding-right: 189px;
 }
 
+.main__button {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #0056EC;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
+}
+
 
