@@ -14,7 +14,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 206px;
+  margin-bottom: 143px;
 }
 
 .logo {
@@ -77,10 +77,11 @@ body {
 }
 
 .main {
-  padding: 0 63% 317px 0;
-  background: top right no-repeat url(images/main-picture.svg);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .main__title {
   font: 600 66px/85px 'ptserif-bold';
   margin: 0 0 40px 0;
@@ -95,4 +96,16 @@ body {
   margin: 0 0 41px 0;
   width: 455px;
 }
+
+.outer__image {
+  display: inline-block;
+  border: dashed 1px red;
+}
+
+.main__left {
+  display: inline-block;
+  width: 37%;
+  padding-right: 189px;
+}
+
 
