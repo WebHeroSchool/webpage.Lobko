@@ -99,7 +99,6 @@ body {
 
 .outer__image {
   display: inline-block;
-  border: dashed 1px red;
 }
 
 .main__left {
@@ -119,4 +118,43 @@ body {
 
 .main__button:hover {
   opacity: .5;
+}
+
+@media (max-width: 1366px) {
+  
+  .wrapper{
+    width: 67%;
+    padding: 
+  }
+
+  .header {
+    margin-bottom: 83px;
+  }
+
+  .main {
+    background: 
+
+  }
+
+  .outer__image {
+    display: none;
+  }
+   
+}
+
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 38px;
+  }
+
+  .main {
+    padding: 74% 0 0;
+    background
+  }
+
 }
