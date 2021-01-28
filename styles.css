@@ -180,10 +180,44 @@ body {
   }
 
   .wrapper {
-    width: 84%;
+    width: 86%;
   }
   .header {
     margin-bottom: 0;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 17px; 
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: ' ';
+    background-color: #0056EC;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+  }
+  
+  .header__burger:before{
+    top: 32px;
+  }
+
+  .header__burger:after {
+    bottom: -32px;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #0056ec;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    top: 39px;
   }
 
   .main {
@@ -192,7 +226,7 @@ body {
 
   .main__left {
     width: 100%;
-    padding: 85% 0 0 ; 
+    padding: 83% 0 0 ; 
   }
 
   .main__title {
