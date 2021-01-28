@@ -89,7 +89,7 @@ body {
   padding: 80px 189px 200px 0
 }
 .main__title {
-  font: 600 66px/85px 'ptserif-bold';
+  font: 700 66px/85px 'ptserif-bold';
   margin: 0 0 40px 0;
 }
 
@@ -98,7 +98,7 @@ body {
 }
 
 .main__subtitle {
-  font: 400 22px/26px 'roboto-regular';
+  font: 500 22px/26px 'roboto-regular';
   margin: 0 0 41px 0;
   width: 37%;
 }
@@ -117,6 +117,9 @@ body {
 
 @media (max-width: 1366px) {
   
+  .main {
+    background-size: contain;
+  }
   .main__title {
     font: 600 50px/65px 'ptserif-bold';
   }
@@ -144,15 +147,28 @@ body {
 
   .main__left {
     width: 45%;
-    padding: 0 40px 200px 0;
+    padding: 0 40px 100px 0;
   }
 
 }
 
 @media (max-width: 1024px) {
   .wrapper{
-    width: 81%;
-    }
+    width: 91%;
+  }
+
+  .main {
+    background-size: contain;
+  }
+  
+  .main__left {
+    width: 52%;
+    padding: 30px 20px 80px 0;
+  }
+
+  .logo {
+    margin-right: 39%;
+  }
 
 }
 
@@ -160,7 +176,36 @@ body {
 
   .menu, .logo__name  {
     display: none;
-   
   }
 
+  .wrapper {
+    width: 84%;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .main__left {
+    width: 100%;
+    padding: 90% 0 0 ;
+  }
+
+  .main__title {
+    font: 700 30px/39px 'ptserif-bold';
+    margin-bottom: 44px;
+  }
+
+  .main__subtitle {
+    margin-bottom: 25px;
+    font: 500 16px/19px 'roboto-medium';
+    width: 80%;
+  }
+
+  .main__button {
+    font: 500 14px/16px 'roboto-regular';
+  }
 }
