@@ -100,16 +100,18 @@ body {
 .main__subtitle {
   font: 500 22px/26px 'roboto-regular';
   margin: 0 0 41px 0;
-  width: 37%;
+  width: 80%;
+  display: inline-block;
 }
 
 .main__button {
   color: #fff;
-  padding: 15px 22px;
+  padding: 16px 27px;
   text-decoration: none;
   background-color: #0056EC;
   transition: opacity .5s; 
   border-radius: 4px;
+  display: inline-block;
 }
 
 .main__button:hover {
@@ -145,7 +147,7 @@ body {
     line-height: 21px;
     width: 367px;
   }
-
+  
   .main__left {
     width: 45%;
     padding: 0 40px 100px 0;
@@ -158,13 +160,21 @@ body {
     width: 91%;
   }
 
+  .header {
+    margin-bottom: 80px;
+  }
+
   .main {
     background-size: contain;
   }
   
   .main__left {
     width: 52%;
-    padding: 30px 20px 80px 0;
+    padding: 10px 20px 55px 0;
+  }
+
+  .main__title {
+    padding-top: 11px;
   }
 
   .logo {
