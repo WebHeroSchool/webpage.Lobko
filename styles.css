@@ -242,6 +242,7 @@ body {
   .main__title {
     font: 700 30px/39px 'ptserif-bold';
     margin-bottom: 30px;
+    padding-top: 0;
   }
 
   .main__subtitle {
