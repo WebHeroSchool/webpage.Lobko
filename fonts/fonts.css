@@ -1,0 +1,36 @@
+/* font-family: roboto-regular */
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('roboto-regular/roboto-regular.eot');
+  src: url('roboto-regular/roboto-regular.eot?#iefix') format('embedded-opentype'),
+       url('roboto-regular/roboto-regular.woff2') format('woff2'),
+       url('roboto-regular/roboto-regular.woff') format('woff'),
+       url('roboto-regular/roboto-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* font-family: roboto-medium */
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('roboto-medium/roboto-medium.eot');
+  src: url('roboto-medium/roboto-medium.eot?#iefix') format('embedded-opentype'),
+       url('roboto-medium/roboto-medium.woff2') format('woff2'),
+       url('roboto-medium/roboto-medium.woff') format('woff'),
+       url('roboto-medium/roboto-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* font-family: ptserif-bold */
+@font-face {
+  font-family: 'ptserif-bold';
+  src: url('ptserif-bold/ptserif-bold.eot');
+  src: url('ptserif-bold/ptserif-bold.eot?#iefix') format('embedded-opentype'),
+       url('ptserif-bold/ptserif-bold.woff2') format('woff2'),
+       url('ptserif-bold/ptserif-bold.woff') format('woff'),
+       url('ptserif-bold/ptserif-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
