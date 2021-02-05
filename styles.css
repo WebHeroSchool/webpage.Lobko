@@ -31,7 +31,7 @@ body {
   visibility: hidden;
   top: 0;
   left: -100%;
-  width: 375px;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -261,15 +261,15 @@ body {
   #burger__switch:checked ~ .header__burger span {
     transform: rotate(45deg);
   }
-  #burger__switch:checked ~ .header__burger :before {
+  #burger__switch:checked ~ .header__burger::before {
     top: 0;
     transform: rotate(0);
   }
-  #burger__switch:checked ~ .header__burger :after {
+  #burger__switch:checked ~ .header__burger::after {
     top: 0;
     transform: rotate(90deg);
   }
-  #burger__switch:checked ~ .box {
+  #burger__switch:checked ~ .burger {
     visibility: visible;
     left: 0;
   }
