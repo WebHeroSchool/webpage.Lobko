@@ -17,10 +17,12 @@ body {
   margin-bottom: 130px;
 }
 
+/* скрыть бургер в обычной верстке */
 .header__burger { 
   display: none;
 }
 
+/* скрыть checkbox */
 #burger__switch {
   opacity: 0;
 }
@@ -149,6 +151,7 @@ body {
   opacity: .5;
 }
 
+/* для экранов от 1366px до 1922рх */
 @media (max-width: 1366px) {
   
   .main {
@@ -186,6 +189,7 @@ body {
 
 }
 
+/* для экранов до 1024рх до 1366рх */
 @media (max-width: 1024px) {
   .wrapper{
     width: 91%;
@@ -213,7 +217,7 @@ body {
   }
 
 }
-
+/* для мобилки */
 @media (max-width: 768px) {
 
   .menu, .logo__name  {
@@ -227,6 +231,7 @@ body {
     margin-bottom: 0;
   }
 
+  /* бургер меню */
   .header__burger {
     display: block;
     position: relative;
@@ -258,6 +263,7 @@ body {
     top: 39px;
   }
 
+  /* открыть/закрыть бургер меню */
   #burger__switch:checked ~ .header__burger span {
     transform: rotate(45deg);
   }
