@@ -262,16 +262,15 @@ body {
     transform: rotate(45deg);
   }
   #burger__switch:checked ~ .header__burger::before {
-    top: 0;
+
     transform: rotate(0);
   }
   #burger__switch:checked ~ .header__burger::after {
-    top: 0;
+
     transform: rotate(90deg);
   }
   #burger__switch:checked ~ .burger {
     visibility: visible;
-    left: 0;
   }
 
   .main {
