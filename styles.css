@@ -17,36 +17,9 @@ body {
   margin-bottom: 130px;
 }
 
-/* скрыть бургер в обычной верстке */
-.header__burger { 
-  display: none;
-}
-
 /* скрыть checkbox */
 #burger__switch {
   opacity: 0;
-}
-
-/* бургер */
-.burger__button> span,
-.burger__button > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #0056EC;
-  ;
-}
-
-.menu__btn > span::before {
-  content: '';
-  top: -32px;
-}
-
-.menu__btn > span::after {
-  content: '';
-  top: 32px;
 }
 
 /* бургер открытое меню */
@@ -59,19 +32,10 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 180px 0;
   list-style: none;
   text-align: center;
-}
-
-.burger__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'roboto-regular';
-  font-size: 30px;
-  font-weight: 500;
-  text-decoration: none;
+  background: #fff;
 }
 
 .logo {
@@ -255,13 +219,6 @@ body {
     margin-bottom: 0;
   }
 
-  /* бургер меню */
-  .header__burger {
-    display: block;
-    position: relative;
-
-  }
-
   /* открыть/закрыть бургер меню */
   #burger__switch:checked ~ .burger__button > span {
     transform: rotate(45deg);
@@ -278,6 +235,37 @@ body {
     visibility: visible;
     left: 0;
   }
+  /* бургер */
+.burger__button > span,
+.burger__button > span::before,
+.burger__button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056EC;
+  ;
+}
+
+.burger__button > span::before {
+  content: '';
+  top: -8px;
+}
+
+.burger__button > span::after {
+  content: '';
+  top: 8px;
+}
+
+.burger__item {
+  display: block;
+  padding: 12px 0;
+  color: #000;
+  font-family: 'roboto-regular';
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
 
   .main {
     text-align: center;
