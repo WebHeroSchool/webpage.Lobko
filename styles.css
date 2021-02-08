@@ -27,7 +27,30 @@ body {
   opacity: 0;
 }
 
-.burger {
+/* бургер */
+.burger__button> span,
+.burger__button > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056EC;
+  ;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -32px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 32px;
+}
+
+/* бургер открытое меню */
+.burger__menu {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -38,13 +61,14 @@ body {
   margin: 0;
   padding: 80px 0;
   list-style: none;
+  text-align: center;
 }
 
 .burger__item {
   display: block;
   padding: 12px 24px;
-  color: #000;
-  font-family: 'roboto-medium';
+  color: #333;
+  font-family: 'roboto-regular';
   font-size: 30px;
   font-weight: 500;
   text-decoration: none;
@@ -235,48 +259,24 @@ body {
   .header__burger {
     display: block;
     position: relative;
-    width: 25px;
-    height: 17px; 
-    cursor: pointer;
-  }
 
-  .header__burger span,
-  .header__burger:before,
-  .header__burger:after {
-    content: ' ';
-    background-color: #0056EC;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    right: 0;
-  }
-  
-  .header__burger:before{
-    top: 32px;
-  }
-
-  .header__burger:after {
-    bottom: -32px;
-  }
-
-  .header__burger span {
-    top: 39px;
   }
 
   /* открыть/закрыть бургер меню */
-  #burger__switch:checked ~ .header__burger span {
+  #burger__switch:checked ~ .burger__button > span {
     transform: rotate(45deg);
   }
-  #burger__switch:checked ~ .header__burger::before {
-
+  #burger__switch:checked ~ .burger__button > span::before {
+    top: 0;
     transform: rotate(0);
   }
-  #burger__switch:checked ~ .header__burger::after {
-
+  #burger__switch:checked ~ .burger__button > span::after {
+    top: 0;
     transform: rotate(90deg);
   }
-  #burger__switch:checked ~ .burger {
+  #burger__switch:checked ~ .burger__menu {
     visibility: visible;
+    left: 0;
   }
 
   .main {
