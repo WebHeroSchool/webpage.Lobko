@@ -1,11 +1,13 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>app.creation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts/fonts.css">
    </head>
+
+   <!-- using wrapper to control the paddings in adaptive layout -->
  <body class="body">
    <div class="wrapper">
     <header class="header">  
@@ -14,12 +16,14 @@
         <div class="logo__circle logo__circle_color_blue"></div>
         <span class="logo__name">app.creation</span>
       </div>
+
+      <!-- burger menu (hidden in full-screen mode) -->
       <div class="header__burger">
-        <input id="burger__switch" type="checkbox">
-          <label for="burger__switch"></label>
-        </imput>
-        <span></span>
-        <ul class="burger">
+        <input id="burger__switch" type="checkbox" /> <!-- checkbox input to open adaptive menu -->
+          <label class="burger__button" for="burger__switch">
+            <span></span>
+          </label>
+        <ul class="burger__nav">
           <li><a class="burger__item" href="#">start</a></li>
           <li><a class="burger__item" href="#">services</a></li>
           <li><a class="burger__item" href="#">about</a></li>
@@ -27,6 +31,8 @@
           <li><a class="burger__item" href="#">contact us</a></li>
         </ul>
       </div>
+
+      <!-- normal menu -->
       <nav class="menu">
        <a class="menu__item" href="#">start</a>
        <a class="menu__item menu__item_active" href="#">services</a>
@@ -35,6 +41,8 @@
        <a class="menu__item" href="#">contact us</a>
       </nav>
     </header>
+
+    <!-- main part -->
     <section class="main">
       <div class="main__left">
         <h1 class="main__title">
