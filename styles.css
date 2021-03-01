@@ -44,7 +44,7 @@ body {
 /* logo */
 .logo {
   position: relative;
-  margin-right: 63%;
+  margin-right: 61%;
   padding: 40px 0 40px 44px;
   font: 700 24px/31px 'ptserif-bold';
 }
@@ -159,7 +159,7 @@ body {
   }
 
   .logo {
-    margin-right: 45%;
+    margin-right: 43%;
   }
 
   .menu__item, .main__button {
