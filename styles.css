@@ -228,6 +228,8 @@ body {
     height: 17px;
     cursor: pointer;
     z-index: 1;
+
+    /* animated burger menu button */
     animation:
     stretch
     1s
