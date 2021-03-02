@@ -44,7 +44,7 @@ body {
 /* logo */
 .logo {
   position: relative;
-  margin-right: 63%;
+  margin-right: 61%;
   padding: 40px 0 40px 44px;
   font: 700 24px/31px 'ptserif-bold';
 }
@@ -133,14 +133,15 @@ body {
   color: #fff;
   padding: 16px 27px;
   text-decoration: none;
-  background-color: #0056EC;
-  transition: opacity .5s; 
+  background-color: #0056EC; 
   border-radius: 4px;
   display: inline-block;
 }
 
 .main__button:hover {
-  opacity: .5;
+  color: #0056EC;
+  background-color: #fff;
+  border: 2px solid #0056EC;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -159,7 +160,7 @@ body {
   }
 
   .logo {
-    margin-right: 45%;
+    margin-right: 43%;
   }
 
   .menu__item, .main__button {
@@ -227,6 +228,17 @@ body {
     height: 17px;
     cursor: pointer;
     z-index: 1;
+
+    /* animated burger menu button */
+    animation:
+    stretch
+    1s
+    ease-out
+    0s
+    alternate
+    infinite
+    none
+    running;
   }
 
   .burger__button > span,
@@ -250,6 +262,15 @@ body {
     top: 8px;
   }
 
+  @keyframes stretch {
+    0% {
+      transform: scale(.7);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }  
+
   .burger__item {
     display: block;
     padding: 12px 24px;
@@ -258,6 +279,11 @@ body {
     font-size: 30px;
     font-weight: 500;
     text-decoration: none;
+  }
+
+  .burger__item:hover {
+    text-decoration: underline 3px;
+    text-decoration-color: #0056EC;
   }
 
   #burger__switch:checked ~ .burger__button > span {
@@ -274,6 +300,7 @@ body {
   #burger__switch:checked ~ .burger__nav {
     visibility: visible;
     left: 0;
+    position: absolute;
   }
 
   .main {
