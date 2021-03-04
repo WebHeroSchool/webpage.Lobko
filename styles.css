@@ -1,12 +1,8 @@
-html {
-  font-family: 'roboto-regular';
-}
+html { font-family: 'roboto-regular', sans-serif;; }
 
-body {
-  margin: 0;
-}
+body { margin: 0; }
 
-.wrapper{
+.wrapper {
   margin: auto;
   width: 80%;
 }
@@ -18,13 +14,9 @@ body {
 }
 
 /* hide burger menu */
-.burger__button {
-  display: none;
-}
+.burger__button { display: none; }
 
-#burger__switch {
-  opacity: 0;
-}
+#burger__switch { opacity: 0; }
 
 .burger__nav {
   visibility: hidden ;
@@ -59,14 +51,14 @@ body {
 }
 
 .logo__circle_color_dark-blue {
-  background: #0056EC;
+  background: #0056ec;
   opacity: 70%;
 }
 
 .logo__circle_color_blue {
   left: 8px;
   top: 56%;
-  background: #C8DBFB;
+  background: #c8dbfb;
   opacity: 70%;
 }
 
@@ -75,9 +67,8 @@ body {
   align-items: center;
 }
 
-.menu__item, .main__button {
-  font: 500 18px/21px 'roboto-medium';
-}
+.menu__item,
+.main__button { font: 500 18px/21px 'roboto-medium'; }
 
 .menu__item {
   position: relative;
@@ -86,9 +77,7 @@ body {
   margin-right: 26px;
 }
 
-.menu__item:last-child {
-  margin-right: 0;
-}
+.menu__item:last-child { margin-right: 0; }
 
 /* underlining the active menu item */
 .menu__item_active:after {
@@ -113,14 +102,13 @@ body {
   width: 37%;
   padding: 80px 189px 200px 0
 }
+
 .main__title {
   font: 700 66px/85px 'ptserif-bold';
   margin: 0 0 40px 0;
 }
 
-.main__title_highlight {
-  background: #ECF3FF;
-}
+.main__title_highlight { background: #ECF3FF; }
 
 .main__subtitle {
   font: 500 22px/26px 'roboto-regular';
@@ -133,38 +121,30 @@ body {
   color: #fff;
   padding: 16px 27px;
   text-decoration: none;
-  background-color: #0056EC; 
+  background-color: #0056ec; 
   border-radius: 4px;
   display: inline-block;
 }
 
 .main__button:hover {
-  color: #0056EC;
+  color: #0056ec;
   background-color: #fff;
-  border: 2px solid #0056EC;
+  border: 2px solid #0056ec;
 }
 
 @media only screen and (max-width: 1366px) {
-  .wrapper{
-    width: 68%;
-  }
+  .wrapper { width: 68%; }
 
-  .header {
-    margin-bottom: 100px;
-  }
+  .header { margin-bottom: 100px; }
 
-  .main {
-    background-size: contain;
-  }
+  .main { background-size: contain; }
 
   .main__left {
     width: 45%;
     padding: 0 40px 100px 0;
   }
 
-  .main__title {
-    font: 600 50px/65px 'ptserif-bold';
-  }
+  .main__title { font: 600 50px/65px 'ptserif-bold'; }
 
   .main__subtitle {
     font-size: 18px;
@@ -172,46 +152,32 @@ body {
     width: 367px;
   }
 
-  .menu__item, .main__button {
-    font: 500 14px/16px 'roboto-medium';
-  }
+  .menu__item, 
+  .main__button { font: 500 14px/16px 'roboto-medium'; }
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrapper{
-    width: 91%;
-  }
+  .wrapper { width: 91%; }
 
-  .header {
-    margin-bottom: 80px;
-  }
+  .header { margin-bottom: 80px; }
 
-  .main {
-    background-size: contain;
-  }
+  .main { background-size: contain; }
   
   .main__left {
     width: 52%;
     padding: 10px 20px 55px 0;
   }
 
-  .main__title {
-    padding-top: 11px;
-  }
+  .main__title { padding-top: 11px; }
 }
 
 @media only screen and (max-width: 768px) {
-  .menu, .logo__name  {
-    display: none;
-  }
+  .menu, 
+  .logo__name  { display: none; }
 
-  .wrapper {
-    width: 86%;
-  }
-  
-  .header {
-    margin-bottom: 0;
-  }
+  .wrapper { width: 86%; }
+
+  .header { margin-bottom: 0; }
 
   .burger__button {
     display: flex;
@@ -240,7 +206,7 @@ body {
   .burger__button > span,
   .burger__button > span::before,
   .burger__button > span::after {
-    background-color: #0056EC;
+    background-color: #0056ec;
     display: block;
     position: absolute;
     height: 3px;
@@ -259,12 +225,8 @@ body {
   }
 
   @keyframes stretch {
-    0% {
-      transform: scale(.7);
-    }
-    100% {
-      transform: scale(1.1);
-    }
+    0% { transform: scale(.7);}
+    100% { transform: scale(1.1);}
   }  
 
   .burger__item {
@@ -279,7 +241,7 @@ body {
 
   .burger__item:hover {
     text-decoration: underline 3px;
-    text-decoration-color: #0056EC;
+    text-decoration-color: #0056ec;
   }
 
   #burger__switch:checked ~ .burger__button > span {
@@ -299,9 +261,7 @@ body {
     position: absolute;
   }
 
-  .main {
-    text-align: center;
-  }
+  .main { text-align: center; }
 
   .main__left {
     width: 100%;
